@@ -149,3 +149,6 @@ def main():
         print(f"Successfully processed dataset: {dataset_name}")
 
     print("\nAll selected datasets processed.")
+
+if __name__ == "__main__":
+    main()

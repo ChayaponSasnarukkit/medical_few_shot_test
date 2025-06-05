@@ -34,7 +34,7 @@ def download_checkpoint(task, dataset, shots, trainer, seed):
     print(f"\nAttempting download for: Task={task}, Dataset={dataset}, Shots={shots}, Trainer={trainer}, Seed={seed}")
 
     if task == "few_shot":
-        base_path = f"few_shot/{dataset}/shots_{shots}/{trainer}/{NCTX_CSC_CTP_SUFFIX}"
+        base_path = f"few_shot/{dataset.lower()}/shots_{shots}/{trainer}/{NCTX_CSC_CTP_SUFFIX}"
         model_name = "model.pth.tar-100"
     elif task == "base2new":
         # Original script logic: base2new task uses shots_16 and model.pth.tar-50
